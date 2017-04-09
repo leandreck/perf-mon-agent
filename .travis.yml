@@ -3,3 +3,9 @@ os:
   - linux
 jdk:
   - oraclejdk8
+
+script:
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent verify
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
