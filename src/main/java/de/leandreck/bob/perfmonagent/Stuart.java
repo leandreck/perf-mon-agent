@@ -14,8 +14,9 @@ public class Stuart {
      * @param instrumentation
      */
     public static void premain(String args, Instrumentation instrumentation){
-        ClassLogger transformer = new ClassLogger();
-        instrumentation.addTransformer(transformer);
+        //FIXME
+//        ClassLogger transformer = new ClassLogger();
+//        instrumentation.addTransformer(transformer);
     }
 
 }
